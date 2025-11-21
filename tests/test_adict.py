@@ -1,4 +1,4 @@
-import src.adict as a
+import adicts as a
 
 def test_add():
     test = a.add({"a":1},{"a":2})
