@@ -1,5 +1,6 @@
 import numpy as np
 
+
 def sub(
     d1: dict,
     d2: dict,
@@ -59,7 +60,7 @@ def crem(d: dict, how: str, cond: callable) -> dict:
 def rem(d: dict, keys: list[str]) -> dict:
     """
     Removes specified keys from the dictionary.
-    
+
     :param d: Input dictionary
     :type d: dict
     :param keys: List of keys to remove
@@ -73,7 +74,7 @@ def rem(d: dict, keys: list[str]) -> dict:
 def to_np(d: dict, how: str = "v") -> np.ndarray:
     """
     Converts dictionary keys or values to a NumPy array.
-    
+
     :param d: Input dictionary
     :type d: dict
     :param how: "k" to convert keys, "v" to convert values
@@ -92,7 +93,7 @@ def to_np(d: dict, how: str = "v") -> np.ndarray:
 def mul(d: dict, factor: dict | int | float) -> dict:
     """
     Multiplies dictionary values by a factor, which can be a scalar or another dictionary.
-    
+
     :param d: Input dictionary
     :type d: dict
     :param factor: Scalar factor or dictionary of factors
@@ -130,7 +131,7 @@ def pow(d: dict, exponent: dict | int | float) -> dict:
 def apply(func: callable, d: dict, how: str = "v") -> dict:
     """
     Applies a function to either the keys or values of a dictionary.
-    
+
     :param func: Function to apply
     :type func: callable
     :param d: Input dictionary
